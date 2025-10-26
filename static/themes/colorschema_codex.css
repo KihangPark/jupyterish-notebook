@@ -1,0 +1,22 @@
+/* Override CSS variables here to match your colorschema.png palette.
+   Drop-in palette: deep navy background, emerald accent, soft panel. */
+:root {
+  /* Palette tuned to the reference image (dark slate + colorful accents) */
+  --bg: #2b303b;
+  --text: #d8dee9;
+  --muted-text: #a7b1c2;
+  --header-bg: #232730;
+  --header-text: #e5e9f0;
+  --accent: #a3be8c;
+  --accent-hover: #8fb179;
+  --panel: #2a2f39;
+  --cell-bg: #303541;
+  --border: #3b4252;
+  --output-bg: #2f3440;
+  --error-bg: #3b1d1d;
+  --error-border: #b91c1c;
+  --accent-red: #e06c75;
+  --accent-green: #a3be8c;
+  --accent-purple: #b48ead;
+  --accent-yellow: #ebcb8b;
+}

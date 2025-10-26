@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jupyter-ish</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <!-- Optional theme override generated from colorschema.png -->
+  <link rel="stylesheet" href="/static/themes/colorschema_codex.css" />
+</head>
+<body>
+  <header>
+  </header>
+  <main>
+    <div class="toolbar">
+      <button id="addCell">＋ Add Code Cell</button>
+      <button id="addMdCell">＋ Add Markdown Cell</button>
+      <button id="addDotCell">＋ Add DOT Cell</button>
+      <button id="addImageCell">＋ Add Image Cell</button>
+
+      <select id="dotTemplateSelect" title="DOT Template">
+        <option value="">— DOT Templates —</option>
+        <option value="flow">Flowchart</option>
+        <option value="cluster">Clustered</option>
+        <option value="seq">Sequence-like</option>
+        <option value="deps">Dependencies LR</option>
+        <option value="state">State Machine</option>
+        <option value="tree">Tree</option>
+      </select>
+      <button id="insertDotTplBtn">⤺ Insert DOT Template</button>
+
+      <input id="fnameInput" class="fname-input" type="text" placeholder="Base file name (optional)" />
+      <button id="saveBtn">💾 Save</button>
+      <button id="exportBtn">📜 Export as Script</button>
+      <button id="restoreBtn" title="Restore from autosave">↩ Restore Session</button>
+      <button id="clearAutosaveBtn" title="Clear autosave">✖ Clear Autosave</button>
+      <button id="exportJsonBtn" title="Export notebook JSON">⤓ Export JSON</button>
+      <button id="importJsonBtn" title="Import notebook JSON">⤒ Import JSON</button>
+      <input id="importJsonFile" type="file" accept="application/json" style="display:none" />
+      <select id="fileList" title="Notebooks"></select>
+      <button id="loadBtn">📂 Load</button>
+      <button id="presentBtn">🎬 Present</button>
+    </div>
+    <div id="cells"></div>
+  </main>
+  <footer>
+    <small>FastAPI + IPython · <a href="/static/notices/THIRD_PARTY_NOTICES.txt" target="_blank" rel="noopener">Third‑party notices</a></small>
+  </footer>
+
+  <!-- vendor: local -->
+  <script src="/static/vendor/marked.min.js" defer></script>
+  <!-- Viz.js must load BEFORE full.render.js -->
+  <script src="/static/vendor/viz.js" defer></script>
+  <script src="/static/vendor/render.full.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

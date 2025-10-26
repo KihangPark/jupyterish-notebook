@@ -1,0 +1,52 @@
+Third-Party Notices
+
+This application includes or depends on the following third-party components.
+Each is used under its respective license. License texts are provided under
+LICENSES/ and summarized here for convenience.
+
+Client-side (distributed to browser)
+-----------------------------------
+- Viz.js (MIT)
+  - https://github.com/mdaines/viz.js
+  - Viz.js bundles Graphviz (EPL-1.0), Emscripten (MIT), and Expat (MIT)
+  - Graphviz source: https://gitlab.com/graphviz/graphviz (v2.40.x)
+  - Files: static/vendor/viz.js, static/vendor/render.full.js
+
+- Graphviz (EPL-1.0)
+  - https://graphviz.org/
+  - EPL-1.0 license text included (LICENSES/EPL-1.0.txt)
+  - When distributing Viz.js/full.render.js, Graphviz is effectively
+    distributed; source is available via the Graphviz project above.
+
+- Emscripten (MIT)
+  - https://emscripten.org/
+
+- Expat (MIT)
+  - https://libexpat.github.io/
+
+- marked.js (MIT)
+  - https://github.com/markedjs/marked
+  - File: static/vendor/marked.min.js
+
+Server-side
+-----------
+- FastAPI (MIT) — https://fastapi.tiangolo.com/
+- Starlette (BSD-3-Clause) — https://www.starlette.io/
+- Pydantic (MIT) — https://github.com/pydantic/pydantic
+- Uvicorn (BSD-3-Clause) — https://www.uvicorn.org/
+- IPython (BSD-3-Clause) — https://ipython.org/
+
+License Texts
+-------------
+- Eclipse Public License v1.0: LICENSES/EPL-1.0.txt
+- MIT License: LICENSES/MIT.txt
+- BSD 3-Clause License: LICENSES/BSD-3-Clause.txt
+
+Attribution & Source Offer (Graphviz/EPL)
+-----------------------------------------
+This application serves Viz.js with full.render.js, which incorporates
+Graphviz (EPL-1.0). In accordance with EPL-1.0 requirements, recipients are
+informed of their rights under EPL-1.0 and may obtain source code from the
+Graphviz project site listed above. No changes have been made to Graphviz
+itself in this distribution.
+

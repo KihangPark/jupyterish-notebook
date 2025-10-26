@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+venv/
+test_env/
+.env
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Local user files
+notebooks/
+scripts/
+static/vendor/
